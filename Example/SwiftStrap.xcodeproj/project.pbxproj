@@ -110,6 +110,7 @@
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
 				963EC04E7127948BFE9D811D /* [CP] Embed Pods Frameworks */,
+				C182819B228EC00F00DFECC6 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -214,6 +215,24 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftStrap_Tests/Pods-SwiftStrap_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C182819B228EC00F00DFECC6 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then \nswiftlint autocorrect --config \"../.swiftlint.auto.yml\" && swiftlint --config \"../.swiftlint.yml\"\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

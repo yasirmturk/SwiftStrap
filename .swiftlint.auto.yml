@@ -1,0 +1,23 @@
+disabled_rules:
+  - custom_rules
+  - leading_whitespace
+  - legacy_cggeometry_functions
+  - legacy_constant
+  - legacy_constructor
+  - legacy_nsgeometry_functions
+  - private_over_fileprivate
+  - redundant_discardable_let
+  - redundant_optional_initialization
+  - redundant_string_enum_value
+  - redundant_void_return
+  - trailing_comma
+  - trailing_semicolon
+  - unused_closure_parameter
+  - void_return
+opt_in_rules: # some rules are only opt-in
+  - closure_end_indentation
+  - closure_spacing
+  - unneeded_parentheses_in_closure_argument
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+  - Pods
+  - External
