@@ -1,6 +1,11 @@
 language:
   - swift
 osx_image: xcode10.1
+cache: cocoapods
+podfile: Example/Podfile
+before_install:
+  - gem install cocoapods
+  - pod install --project-directory=Example
 script:
   - export POD_NAME=SwiftStrap
   - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/${POD_NAME}.xcworkspace -scheme ${POD_NAME}-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
