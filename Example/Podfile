@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'SwiftStrap_Tests' do
+
+  # Pods for SwiftStrap_Tests
+
+  pod 'SwiftStrap', :path => '../'
+  
+  pod 'Quick', '~> 2.1.0'
+  pod 'Nimble', '~> 8.0.1'
+  
+end
